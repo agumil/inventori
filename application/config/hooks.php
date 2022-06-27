@@ -12,6 +12,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
  */
 
+$hook['pre_system'] = [
+    'class' => 'Lib_env',
+    'function' => 'main',
+    'filename' => 'Lib_env.php',
+    'filepath' => 'hooks',
+];
+
 $hook['post_controller'] = [
     'class' => 'Auth_hook',
     'function' => 'isLoggedIn',
