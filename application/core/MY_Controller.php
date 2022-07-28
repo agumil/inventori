@@ -19,6 +19,7 @@ class MY_Controller extends CI_Controller
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $base . 'api/' . $endpoint);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ["X-Requested-With: XMLHttpRequest"]);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);

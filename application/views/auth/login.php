@@ -70,7 +70,6 @@
   <!-- AdminLTE App -->
   <script src="<?= base_url('assets/dist/js/adminlte.min.js'); ?>"></script>
 
-  <script src="<?= base_url('assets/dist/js/core.js'); ?>"></script>
   <script src="<?= base_url('assets/dist/js/pages/login.js'); ?>"></script>
   </body>
 </html>
